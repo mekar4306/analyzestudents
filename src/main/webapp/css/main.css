@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+h2 {
+	color: red;
+}
+
+
+body {
+	background-color: yellow;
+}
+
+td {
+	background-color: white;
+}
