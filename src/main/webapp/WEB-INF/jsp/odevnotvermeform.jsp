@@ -24,7 +24,7 @@
 				background-size:cover;
 				background-color: silver; 
 				
-				background-image: url(https://cdn.pixabay.com/photo/2015/06/02/12/59/narrative-794978_960_720.jpg);"
+				background-image: url(http://gemta.com.tr/wp-content/uploads/2016/07/gemta-arkaplan.gif);"
 			
 			
 			}
