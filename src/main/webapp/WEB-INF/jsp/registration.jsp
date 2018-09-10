@@ -25,6 +25,25 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<style type="text/css">
+	
+			body{
+				background-size:cover;
+				background-color: silver; 
+				
+				background-image: url(http://www.yenislayt.com/upload/940de774a6.gif);"
+			
+			
+			}
+			
+			h3,h4{
+			    color: white;
+			}
+	
+	</style>
+
+
 </head>
 
 <style type="text/css">
