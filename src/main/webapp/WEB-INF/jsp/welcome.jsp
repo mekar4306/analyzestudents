@@ -98,7 +98,8 @@ color:white;
 								  
 								  <a class="btn btn-outline-light" href="\odev\addHomework"><i class="fas fa-sticky-note" aria-hidden="true"></i>&nbsp; ÖDEV VER</a>
 								  <a class="btn btn-outline-light" href="\odev\odevlist"><i class="fas fa-marker"></i>NOT VER</a>  
-								  
+								  <a class="btn btn-outline-light" href="${contextPath}/registration"><i class="far fa-user-circle" aria-hidden="true"></i></i>&nbsp; YENİ HESAP </a>
+			  
 								  <a class="btn btn-outline-light" onclick="document.forms['logoutForm'].submit()" ><i class="fa fa-user-circle fa-fw" aria-hidden="true"></i></i>&nbsp; Çıkış</a>
 					  		    
 					  		
