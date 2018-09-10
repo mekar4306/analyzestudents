@@ -46,7 +46,7 @@ public class OgrBasariRepositoryDAOImpl implements OgrBasariRepositoryDAO {
 				   + "COUNT(*) as Toplam_Verilen_Ödev,"
 				   + "COUNT(ODEV_NOTU) AS Teslim_Edilen_Ödev,"
 				   + "COUNT(*)-count(ODEV_NOTU) AS Teslim_Edilmeyen_Ödev   "
-				   + "from takip.ogrencinot  WHERE NO=?";
+				   + "from heroku_53e5c2ca96bda5e.ogrencinot  WHERE NO=?";
 
 		return DataAccessUtils.singleResult(jdbcTemplate.query(sql, rowMapper, NO));
 

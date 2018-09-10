@@ -43,7 +43,7 @@ public class OgrenciRepositoryDAOImpl implements OgrenciRepositoryDAO {
 	
 	@Override
 	public List<Ogrenci> findAll() {
-		String sql="Select id,NO,ADI,SOYADI,SINIFI FROM takip.ogrenci ";
+		String sql="Select id,NO,ADI,SOYADI,SINIFI FROM heroku_53e5c2ca96bda5e.ogrenci ";
 		
 		return jdbcTemplate.query(sql, rowMapper);
 	}
@@ -51,7 +51,7 @@ public class OgrenciRepositoryDAOImpl implements OgrenciRepositoryDAO {
 	
 	@Override
 	public Ogrenci findById(Long id) {
-		String sql="Select id,NO,ADI,SOYADI,SINIFI FROM takip.ogrenci where id=?";	
+		String sql="Select id,NO,ADI,SOYADI,SINIFI FROM heroku_53e5c2ca96bda5e.ogrenci where id=?";	
 		
 		return  DataAccessUtils.singleResult( jdbcTemplate.query(sql, rowMapper,id)    );
 				
@@ -61,7 +61,7 @@ public class OgrenciRepositoryDAOImpl implements OgrenciRepositoryDAO {
 	
 	@Override
 	public List<Ogrenci> findByLastName(String soyadi) {
-		String sql="Select id,NO,ADI,SOYADI,SINIFI FROM takip.ogrenci where SOYADI like ?";
+		String sql="Select id,NO,ADI,SOYADI,SINIFI FROM heroku_53e5c2ca96bda5e.ogrenci where SOYADI like ?";
 		
 		return jdbcTemplate.query(sql, rowMapper, "%" + soyadi + "%");
 	}
@@ -71,7 +71,7 @@ public class OgrenciRepositoryDAOImpl implements OgrenciRepositoryDAO {
 	@Override
 	public void create(Ogrenci Ogrenci) {
 		
-		 String sql = "INSERT INTO takip.ogrenci (NO,ADI,SOYADI,SINIFI) VALUES(?, ?, ?, ?)";
+		 String sql = "INSERT INTO heroku_53e5c2ca96bda5e.ogrenci (NO,ADI,SOYADI,SINIFI) VALUES(?, ?, ?, ?)";
 		
 		 jdbcTemplate.update(sql,new Object[]{Ogrenci.getNO(),Ogrenci.getADI(),Ogrenci.getSOYADI(),Ogrenci.getSINIFI()});
 		  
@@ -84,13 +84,13 @@ public class OgrenciRepositoryDAOImpl implements OgrenciRepositoryDAO {
 	@Override
 	public void update(Ogrenci Ogrenci) {
 		
-		String sql="update takip.ogrenci set  NO=?,ADI=?,SOYADI=?,SINIFI=? where id=?";
+		String sql="update heroku_53e5c2ca96bda5e.ogrenci set  NO=?,ADI=?,SOYADI=?,SINIFI=? where id=?";
 		jdbcTemplate.update(sql,new Object[]{Ogrenci.getNO(),Ogrenci.getADI(),Ogrenci.getSOYADI(),Ogrenci.getSINIFI(),Ogrenci.getId()});
 	}
 
 	@Override
 	public void delete(Long id) {
-		String sql = "delete from takip.ogrenci where id = ?";
+		String sql = "delete from heroku_53e5c2ca96bda5e.ogrenci where id = ?";
 		jdbcTemplate.update(sql,id);
 
 	}
@@ -98,7 +98,7 @@ public class OgrenciRepositoryDAOImpl implements OgrenciRepositoryDAO {
 
 	@Override
 	public List<Ogrenci> getAllStudentsByClass(String sinif) {
-     String sql="Select id,NO,ADI,SOYADI,SINIFI FROM takip.ogrenci where  SINIFI like ?";
+     String sql="Select id,NO,ADI,SOYADI,SINIFI FROM heroku_53e5c2ca96bda5e.ogrenci where  SINIFI like ?";
 		
 		return jdbcTemplate.query(sql, rowMapper,"%" + sinif + "%");
 	}

@@ -47,7 +47,7 @@ public class OdevRepositoryDAOImpl implements OdevRepositoryDAO {
 	public void giveMarkAndSaveHomework(long id) {
 	
 		String sql = "INSERT INTO ogrencinot (NO,ADI,SOYADI,SINIFI,KONUSU,SON_TESLIM_TARIHI,ODEVID)"+
-				      "SELECT  O.NO, O.ADI,O.SOYADI,O.SINIFI,OD.KONUSU,OD.SON_TESLIM_TARIHI,OD.id FROM takip.odev OD , takip.ogrenci O"
+				      "SELECT  O.NO, O.ADI,O.SOYADI,O.SINIFI,OD.KONUSU,OD.SON_TESLIM_TARIHI,OD.id FROM heroku_53e5c2ca96bda5e.odev OD , heroku_53e5c2ca96bda5e.ogrenci O"
 				      + " where  OD.SINIFI=O.SINIFI and OD.id= ?  ";
 		
 		jdbcTemplate.update(sql, id);
@@ -60,7 +60,7 @@ public class OdevRepositoryDAOImpl implements OdevRepositoryDAO {
 	public List<OgrenciNot> findAllHomeworkNotesByStudentId(long NO) {
 		
 		String sql = "SELECT NO,ADI,SOYADI,SINIFI,KONUSU, ODEV_NOTU  "
-				     + "FROM takip.ogrencinot WHERE NO=?";
+				     + "FROM heroku_53e5c2ca96bda5e.ogrencinot WHERE NO=?";
 		
 		 return  jdbcTemplate.query(sql, rowMapper, NO)  ;
 	}
@@ -68,7 +68,7 @@ public class OdevRepositoryDAOImpl implements OdevRepositoryDAO {
 
 	@Override
 	public void deleteHomeworksNotesByOdevId(long odevId) {
-		String sql = "DELETE FROM takip.ogrencinot WHERE ODEVID= ?";
+		String sql = "DELETE FROM heroku_53e5c2ca96bda5e.ogrencinot WHERE ODEVID= ?";
 		
 		jdbcTemplate.update(sql,odevId);
 		
