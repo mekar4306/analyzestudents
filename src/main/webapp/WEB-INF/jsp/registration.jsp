@@ -27,9 +27,29 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 
+<style type="text/css">
+	
+			body{
+				background-size:cover;
+				background-color: silver; 
+				
+				background-image: url(https://78.media.tumblr.com/1158a59979d6ca25de1dee3639405d22/tumblr_nbi35kAMJN1tvryyso1_500.gif);
+			
+			}
+			
+			h3,h4{
+			    color: white;
+			}
+	
+	</style>
+
 <body>
 
 <div class="container">
+
+<div class="row">
+		
+		 <div class="col-md-4 offset-md-4">
 
     <form:form method="POST" modelAttribute="userForm" class="form-signin">
         <h2 class="form-signin-heading">Yeni Hesap Oluştur</h2>
@@ -57,6 +77,12 @@
 
         <button class="btn btn-lg btn-primary btn-block" type="submit">Kaydet</button>
     </form:form>
+    
+    </div>
+    	<!-- /column -->
+
+	</div>
+	<!-- /row -->
     
     </div>
 <!-- /container -->
