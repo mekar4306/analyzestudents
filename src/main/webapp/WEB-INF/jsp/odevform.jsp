@@ -26,7 +26,7 @@
 				background-size:cover;
 				background-color: silver; 
 				
-				background-image: url(https://cdn.pixabay.com/photo/2015/06/02/12/59/narrative-794978_960_720.jpg);"
+				background-image: url(https://i.pinimg.com/originals/40/9f/26/409f261ae642de692c9953f8e03637fe.gif);"
 			
 			
 			}
@@ -89,9 +89,7 @@
 		  		    
 		  		       </div>
 			
-					<video  width="180" height="240" autoplay loop>
-	 					<source src="https://player.vimeo.com/external/145386665.sd.mp4?s=e16cddbe7b6852517daaaed004ec3b88a34eb8b3&profile_id=112">  
-	 				</video>
+	
 	 				
 				</div>
 					

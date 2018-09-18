@@ -141,10 +141,19 @@ public class StudentController {
      @ModelAttribute("verilensiniflar")
      public Map<String, String> verilensiniflar() {
         Map<String, String> verilensiniflar = new HashMap<String, String>();
-        verilensiniflar.put("8/A", "8/A");
-        verilensiniflar.put("8/B", "8/B");
+        
+        verilensiniflar.put("12/A", "12/A");
+        verilensiniflar.put("12/B", "12/B");
+        verilensiniflar.put("12/C", "12/C");
+        verilensiniflar.put("11/A", "11/A");
+        verilensiniflar.put("11/B", "11/B");
+        verilensiniflar.put("10/A", "10/A");
+        verilensiniflar.put("10/B", "10/B");
         verilensiniflar.put("9/A", "9/A");
         verilensiniflar.put("9/B", "9/B");
+        
+     
+        
         return verilensiniflar;
      }
 	 
