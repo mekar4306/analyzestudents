@@ -22,7 +22,7 @@
 	
 	background-size:cover;
 	background-color: silver; 
-	background-image: url(https://cdn.pixabay.com/photo/2015/11/19/21/10/knowledge-1052010_960_720.jpg);"
+	background-image: url(https://media1.tenor.com/images/6046380eb5664335ec9f077103805d7e/tenor.gif?itemid=8636242);"
 
 }
 
